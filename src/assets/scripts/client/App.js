@@ -2,6 +2,7 @@
 import $ from 'jquery';
 import _isEmpty from 'lodash/isEmpty';
 import _isNil from 'lodash/isNil';
+import EventBus from './lib/EventBus';
 import ContentQueue from './contentQueue/ContentQueue';
 import LoadingView from './LoadingView';
 import AirportController from './airport/AirportController';
@@ -19,6 +20,7 @@ import CanvasController from './canvas/CanvasController';
 import GameClockView from './game/GameClockView';
 import { speech_init } from './speech';
 import { time, calculateDeltaTime } from './utilities/timeHelpers';
+import { EVENT } from './constants/eventNames';
 import { SELECTORS } from './constants/selectors';
 import { LOG } from './constants/logLevel';
 
@@ -32,8 +34,8 @@ const prop = {};
 // imported as needed in each file.
 require('./util');
 
-// saved as this.prop.version and this.prop.version_string
-const VERSION = [4, 1, 2];
+// Used to display the version number in the console
+const VERSION = '5.2.0-BETA';
 
 // are you using a main loop? (you must call update() afterward disable/re-enable)
 let UPDATE = true;
@@ -64,6 +66,7 @@ export default class App {
          * @default body
          */
         this.$element = $(element);
+        this.eventBus = EventBus;
         this.loadingView = null;
         this.contentQueue = null;
         this.airlineCollection = null;
@@ -80,7 +83,6 @@ export default class App {
         this.prop.complete = false;
         this.prop.temp = 'nothing here';
         this.prop.version = VERSION;
-        this.prop.version_string = `v${VERSION.join('.')}`;
         this.prop.time = {};
         this.prop.time.start = time();
         this.prop.time.frames = 0;
@@ -97,6 +99,8 @@ export default class App {
         if (RELEASE) {
             this.prop.log = LOG.WARNING;
         }
+
+        this.eventBus.on(EVENT.AIRPORT_CHANGE, this.onAirportChange);
 
         return this.initiateDataLoad(airportLoadList, initialAirportToLoad);
     }
@@ -208,7 +212,7 @@ export default class App {
         window.uiController = this.uiController;
         // window.canvasController = this.canvasController;
 
-        log(`Version ${this.prop.version_string}`);
+        console.info(`openScope Air Traffic Control Simulator, Version v${this.prop.version}`);
 
         return this.init_pre()
                    .init()

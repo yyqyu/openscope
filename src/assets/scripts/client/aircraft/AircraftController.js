@@ -1,19 +1,17 @@
 /* eslint-disable no-continue */
 import _find from 'lodash/find';
 import _get from 'lodash/get';
-import _isArray from 'lodash/isArray';
-import _isEmpty from 'lodash/isEmpty';
 import _isObject from 'lodash/isObject';
 import _without from 'lodash/without';
 import AircraftTypeDefinitionCollection from './AircraftTypeDefinitionCollection';
 import AircraftInstanceModel from './AircraftInstanceModel';
 import AircraftConflict from './AircraftConflict';
-import RouteModel from '../navigationLibrary/Route/RouteModel';
 import { airlineNameAndFleetHelper } from '../airline/airlineHelpers';
 import { convertStaticPositionToDynamic } from '../base/staticPositionToDynamicPositionHelper';
 import { speech_say } from '../speech';
 import { abs } from '../math/core';
 import { distance2d } from '../math/distance';
+import { isEmptyOrNotArray } from '../utilities/validatorUtilities';
 import { vlen } from '../math/vector';
 import { km } from '../utilities/unitConverters';
 import { FLIGHT_CATEGORY } from '../constants/aircraftConstants';
@@ -36,7 +34,7 @@ export default class AircraftController {
      * @param navigationLibrary {NavigationLibrary}
      */
     constructor(aircraftTypeDefinitionList, airlineController, navigationLibrary) {
-        if (!_isArray(aircraftTypeDefinitionList) || _isEmpty(aircraftTypeDefinitionList)) {
+        if (isEmptyOrNotArray(aircraftTypeDefinitionList)) {
             // eslint-disable-next-line max-len
             throw new TypeError('Invalid aircraftTypeDefinitionList passed to AircraftTypeDefinitionCollection. ' +
                 `Expected and array but received ${typeof aircraftTypeDefinitionList}`);
@@ -420,11 +418,10 @@ export default class AircraftController {
         const { name, fleet } = airlineNameAndFleetHelper([airlineId]);
         const airlineModel = this._airlineController.findAirlineById(name);
         // TODO: impove the `airlineModel` logic here
-        // this seems inefficient to find the model here and then passit back to the controller but
+        // this seems inefficient to find the model here and then pass it back to the controller but
         // since we already have it, it makes little sense to look for it again in the controller
         const flightNumber = this._airlineController.generateFlightNumberWithAirlineModel(airlineModel);
         const aircraftTypeDefinition = this._getRandomAircraftTypeDefinitionForAirlineId(airlineId, airlineModel);
-        const destination = this._setDestinationFromRouteOrProcedure(spawnPatternModel);
         // TODO: this may need to be reworked.
         // if we are building a preSpawn aircraft, cap the altitude at 18000 so aircraft that spawn closer to
         // airspace can safely enter controlled airspace properly
@@ -434,9 +431,9 @@ export default class AircraftController {
         const dynamicPositionModel = convertStaticPositionToDynamic(spawnPatternModel.positionModel);
 
         return {
-            destination,
             fleet,
             altitude,
+            destination: spawnPatternModel.destination,
             callsign: flightNumber,
             category: spawnPatternModel.category,
             airline: airlineModel.icao,
@@ -464,30 +461,5 @@ export default class AircraftController {
      */
     _getRandomAircraftTypeDefinitionForAirlineId(airlineId, airlineModel) {
         return this.aircraftTypeDefinitionCollection.getAircraftDefinitionForAirlineId(airlineId, airlineModel);
-    }
-
-    /**
-     * Determines if `destination` is defined and returns route procedure name if it is not
-     *
-     * The reason we set destination to a procedure names is because the `AircraftStripView`
-     * uses this destination property for display. So for departures, who have no true
-     * destination, the procedure name is used instead
-     *
-     * @for AircraftController
-     * @method _setDestinationFromRouteOrProcedure
-     * @param destination {string}
-     * @param route {string}
-     * @return {string}
-     * @private
-     */
-    _setDestinationFromRouteOrProcedure({ destination, routeString }) {
-        let destinationOrProcedure = destination;
-
-        if (!destination) {
-            const routeModel = new RouteModel(routeString);
-            destinationOrProcedure = routeModel.procedure;
-        }
-
-        return destinationOrProcedure;
     }
 }
