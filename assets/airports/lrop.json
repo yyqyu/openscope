@@ -47,6 +47,7 @@
         "_FAF08L": ["N44d33m53.0", "E25d55m43.3"],
         "_FAF26R": ["N44d35m29.8", "E26d17m02.6"],
         "_FAF26L": ["N44d34m51.4", "E26d17m38.2"],
+        "_SOKRU":  ["N44d59m34.136", "E025d19m49.048"],
         "_THR08R": ["N44.564661", "E26.076747"],
         "_THR08L": ["N44.576622", "E26.0841"],
         "_THR26R": ["N44.579925", "E26.127764"],
@@ -64,8 +65,10 @@
         "DEXIM":   ["N44d42m33.075", "E026d45m14.335"],
         "DILAS":   ["N44d33m22.101", "E025d49m14.534"],
         "DILIM":   ["N44d37m13.027", "E026d50m37.704"],
+        "DINRO":   ["N43d42m00", "E028d48m30"],
         "DIRAL":   ["N44d30m39.00", "E27d33m15.00"],
         "DONOX":   ["N44d11m05.174", "E025d54m23.878"],
+        "EDETA":   ["N45d46m06", "E024d55m52"],
         "EKSUN":   ["N44d55m13.731", "E026d17m08.121"],
         "ELKAV":   ["N44d55m43.219", "E026d51m38.107"],
         "ELVAB":   ["N44d09m52.00", "E25d05m27.00"],
@@ -79,6 +82,7 @@
         "IDARU":   ["N44d38m24.506", "E026d58m54.475"],
         "INDOR":   ["N44d39m45.251", "E026d06m43.720"],
         "IPRAS":   ["N44d41m23.131", "E026d28m49.043"],
+        "IRLOX":   ["N450d38m08", "E024d11m02"],
         "ITVUK":   ["N44d28m00.963", "E026d33m03.413"],
         "IVDEK":   ["N44d28m30.711", "E026d40m00.469"],
         "KODRU":   ["N46d11m32.00", "E28d07m26.00"],
@@ -174,7 +178,6 @@
                 ["N44.564661", "E26.076747", "314ft"],
                 ["N44.56797", "E26.120428", "314ft"]
             ],
-            "sepFromAdjacent": [2.5, 2.5],
             "ils": [true, true]
         },
         {
@@ -183,7 +186,6 @@
                 ["N44.576622", "E26.0841", "313ft"],
                 ["N44.579925", "E26.127764", "313ft"]
             ],
-            "sepFromAdjacent": [2.5, 2.5],
             "ils": [true, true]
         }
     ],
@@ -192,7 +194,7 @@
     "sids": {
         "SOKRU": {
             "icao": "SOKRU",
-            "name": "Sokru Departure",
+            "name": "Sokru",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": [["OP882", "S220-"], "OP890", ["OP891", "A45+"], "GOMDI"],
@@ -200,9 +202,10 @@
                 "26R": [["OP663", "S250-"], "UTOKI"],
                 "26L": [["OP664", "S250-"], "UTOKI"]
             },
-            "body": [],
+            "body": ["SOKRU"],
             "exitPoints": {
-                "SOKRU": [["SOKRU", "A110+"]]
+                "ENIMA": ["ENIMA"],
+                "IRLOX": ["IRLOX"]
             },
             "draw": [
                 ["OP881", "OP890", "OP891", "GOMDI", "SOKRU"],
@@ -213,7 +216,7 @@
         },
         "POLUN": {
             "icao": "POLUN",
-            "name": "Polun Departure",
+            "name": "Polun",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": [["OP884", "A40+|S250-"], "OP889", "USIRO"],
@@ -221,9 +224,9 @@
                 "26R": [["OP665", "A40+"], "SISGU"],
                 "26L": [["OP666", "A40+"], "SISGU"]
             },
-            "body": [],
+            "body": ["POLUN"],
             "exitPoints": {
-              "POLUN": ["POLUN"]
+              "TIMUR": ["TIMUR"]
             },
             "draw": [
                 ["OP884", "OP889", "USIRO", "POLUN"],
@@ -234,7 +237,7 @@
         },
         "NETUL": {
             "icao": "NETUL",
-            "name": "Netul Departure",
+            "name": "Netul",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": ["OP888"],
@@ -242,9 +245,9 @@
                 "26R": [["OP662", "S210-"], ["OP667", "S270-"], "ETOGO"],
                 "26L": [["OP661", "S210-"], ["OP667", "S270-"], "ETOGO"]
             },
-            "body": [],
+            "body": ["NETUL"],
             "exitPoints": {
-              "NETUL": ["NETUL"]
+              "DINRO": ["RIVOS", "DINRO"]
             },
             "draw": [
                 ["OP887", "NETUL"],
@@ -255,7 +258,7 @@
         },
         "IDARU": {
             "icao": "IDARU",
-            "name": "Idaru Departure",
+            "name": "Idaru",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": ["OP888"],
@@ -263,9 +266,9 @@
                 "26R": [["OP662", "S210-"], ["OP667", "S270-"], "ETOGO"],
                 "26L": [["OP661", "S210-"], ["OP667", "S270-"], "ETOGO"]
             },
-            "body": [],
+            "body": ["IDARU"],
             "exitPoints": {
-              "IDARU": ["IDARU"]
+              "DINRO": ["DIRAL", "DINRO"]
             },
             "draw": [
                 ["OP882", "OP884", "OP887", "IDARU"],
@@ -276,7 +279,7 @@
         },
         "DENAK": {
             "icao": "DENAK",
-            "name": "Denak Departure",
+            "name": "Denak",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": [["OP884", "S270-"], "ETUXA", "EKSUN"],
@@ -284,9 +287,9 @@
                 "26R": [["OP662", "S210-"], "OP667"],
                 "26L": [["OP661", "S210-"], "OP667"]
             },
-            "body": [],
+            "body": ["DENAK"],
             "exitPoints": {
-              "DENAK": [["DENAK", "A110+"]]
+              "KODRU": ["KODRU"]
             },
             "draw": [
                 ["OP884", "ETUXA", "EKSUN", "DENAK"],
@@ -297,7 +300,7 @@
         },
         "BUKEL": {
             "icao": "BUKEL",
-            "name": "Bukel Departure",
+            "name": "Bukel",
             "suffix": {"08R": "1K", "08L": "1K", "26R": "1M", "26L": "1M"},
             "rwy": {
                 "08R": [["OP884", "S270-"], "ETUXA"],
@@ -305,9 +308,9 @@
                 "26R": [["OP662", "S210-"], ["OP667", "A45+"], "DESUX"],
                 "26L": [["OP661", "S210-"], ["OP667", "A45+"], "DESUX"]
             },
-            "body": [],
+            "body": ["BUKEL"],
             "exitPoints": {
-              "BUKEL": [["BUKEL", "A110+"]]
+              "EDETA": ["EDETA"]
             },
             "draw": [
                 ["OP884", "ETUXA", "BUKEL"],
@@ -320,10 +323,10 @@
     "stars": {
         "DENAK" : {
             "icao": "DENAK",
-            "name": "Denak Arrival",
+            "name": "Denak",
             "suffix": {"08R": "1U", "08L": "1U", "26R": "2X", "26L": "2X"},
             "entryPoints": {
-                "DENAK": ["FOCSA", "URELA", "LAPKA" ]
+                "FOCSA": ["FOCSA", "URELA", "LAPKA" ]
             },
             "body": [["DENAK","A110+"]],
             "rwy": {
@@ -341,10 +344,10 @@
         },
         "NETUL" : {
             "icao": "NETUL",
-            "name": "Netul Arrival",
+            "name": "Netul",
             "suffix": {"08R": "2U", "08L": "2U", "26R": "1X", "26L": "1X"},
             "entryPoints": {
-                "NETUL": ["RIVOS"]
+                "DINRO": ["DINRO", "RIVOS"]
             },
             "body": [["NETUL", "A110+"]],
             "rwy": {
@@ -362,10 +365,10 @@
         },
         "IDARU" : {
             "icao": "IDARU",
-            "name": "Idaru Arrival",
+            "name": "Idaru",
             "suffix": {"08R": "2U", "08L": "2U", "26R": "1X", "26L": "1X"},
             "entryPoints": {
-                "IDARU": ["DIRAL"]
+                "DINRO": ["DINRO", "DIRAL"]
             },
             "body": [["IDARU", "A110+"]],
                 "rwy": {
@@ -383,10 +386,10 @@
         },
         "OSTAL" : {
             "icao": "OSTAL",
-            "name": "Ostal Arrival",
+            "name": "Ostal",
             "suffix": {"08R": "1U", "08L": "1U", "26R": "1X", "26L": "1X"},
             "entryPoints": {
-                "OSTAL": ["ARGES"]
+                "ARGES": ["ARGES"]
             },
             "body": [["OSTAL", "A110+"], "TOBAG"],
             "rwy": {
@@ -404,10 +407,10 @@
         },
         "TOSVI" : {
             "icao": "TOSVI",
-            "name": "Tosvi Arrival",
+            "name": "Tosvi",
             "suffix": {"08R": "2U", "08L": "2U", "26R": "3X", "26L": "3X"},
             "entryPoints": {
-                "TOSVI": ["LAMIT", "BIVBU"]
+                "LAMIT": ["LAMIT", "BIVBU"]
             },
             "body": [ ["TOSVI", "A110+"], ["UVALU", "A70+"]],
             "rwy": {
@@ -425,7 +428,7 @@
         },
         "TOSVI1R" : {
             "icao": "TOSVI1R",
-            "name": "Tosvi One Romeo Arrival",
+            "name": "Tosvi One Romeo",
             "suffix": {"26R": "", "26L": ""},
             "entryPoints": {
                 "LAMIT": ["LAMIT", "BIVBU"],
@@ -443,10 +446,10 @@
         },
         "SORDU" : {
             "icao": "SORDU",
-            "name": "Sordu Arrival",
+            "name": "Sordu",
             "suffix": {"08R": "1U", "08L": "1U", "26R": "1X", "26L": "1X"},
             "entryPoints": {
-                "SORDU": ["SOMOV" ]
+                "SOMOV": ["SOMOV" ]
             },
             "body": [["SORDU", "A100+"]],
             "rwy": {
@@ -464,10 +467,10 @@
         },
         "OBUGA" : {
             "icao": "OBUGA",
-            "name": "Obuga Arrival",
+            "name": "Obuga",
             "suffix": {"08R": "1U", "08L": "1U", "26R": "1X", "26L": "1X"},
             "entryPoints": {
-                "OBUGA": ["KOMAN"]
+                "KOMAN": ["KOMAN"]
             },
             "body": [["OBUGA", "A110+"]],
             "rwy": {
@@ -489,11 +492,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.SOKRU.SOKRU",
+            "route": "LROP.SOKRU.ENIMA",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 7,
+            "rate": 4,
             "airlines": [
                ["ROT", 5],
                ["RYR", 4],
@@ -507,11 +510,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.BUKEL.BUKEL",
+            "route": "LROP.BUKEL.EDETA",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 7,
+            "rate": 3,
             "airlines": [
                 ["ROT", 5],
                 ["RYR", 4],
@@ -525,11 +528,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.DENAK.DENAK",
+            "route": "LROP.DENAK.KODRU",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 4,
+            "rate": 2,
             "airlines": [
                 ["ROT", 5],
                 ["EWG", 1],
@@ -541,11 +544,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.NETUL.NETUL",
+            "route": "LROP.NETUL.DINRO",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 2,
+            "rate": 1,
             "airlines": [
                 ["ROT", 3],
                 ["THY", 2],
@@ -557,11 +560,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.IDARU.IDARU",
+            "route": "LROP.IDARU.DINRO",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 2,
+            "rate": 1,
             "airlines": [
                 ["ROT", 3],
                 ["THY", 2],
@@ -573,11 +576,11 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.POLUN.POLUN",
+            "route": "LROP.POLUN.TIMUR",
             "altitude": "",
             "speed": "",
             "method": "random",
-            "rate": 5,
+            "rate": 2,
             "airlines": [
                 ["ROT", 3],
                 ["RYR", 2],
@@ -588,11 +591,11 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "TOSVI.TOSVI.LROP",
+            "route": "LAMIT.TOSVI.LROP",
             "altitude": [11000, 17000],
             "speed": 250,
             "method": "wave",
-            "rate": 15,
+            "rate": 7,
             "airlines": [
                 ["ROT", 5],
                 ["RYR", 4],
@@ -610,11 +613,11 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "OBUGA.OBUGA.LROP",
+            "route": "KOMAN.OBUGA.LROP",
             "altitude": [14000, 17000],
             "speed": 250,
             "method": "random",
-            "rate": 5,
+            "rate": 3,
             "airlines": [
                 ["ROT", 3],
                 ["THY", 2],
@@ -626,11 +629,11 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "OSTAL.OSTAL.LROP",
+            "route": "ARGES.OSTAL.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
-            "rate": 5,
+            "rate": 2,
             "airlines": [
                 ["ROT", 3],
                 ["THY", 2],
@@ -642,14 +645,14 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "DENAK.DENAK.LROP",
+            "route": "FOCSA.DENAK.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
-            "rate": 5,
+            "rate": 3,
             "airlines": [
                 ["ROT", 5],
-                ["RYR", 4],
+                ["KLM", 1],
                 ["CSA", 1],
                 ["LOT", 1]
             ]
@@ -658,7 +661,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "NETUL.NETUL.LROP",
+            "route": "DINRO.NETUL.LROP",
             "altitude":  [17000, 20000],
             "speed": 320,
             "method": "random",
@@ -671,7 +674,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "IDARU.IDARU.LROP",
+            "route": "DINRO.IDARU.LROP",
             "altitude":  [17000, 20000],
             "speed": 320,
             "method": "random",
@@ -684,27 +687,11 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "DENAK.DENAK.LROP",
-            "altitude":  [15000, 17000],
-            "speed": 320,
-            "method": "random",
-            "rate": 5,
-            "airlines": [
-                ["ROT", 5],
-                ["RYR", 4],
-                ["CSA", 1],
-                ["LOT", 1]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "LROP",
-            "category": "arrival",
-            "route": "SORDU.SORDU.LROP",
+            "route": "SOMOV.SORDU.LROP",
             "altitude": [14000, 17000],
             "speed": 320,
             "method": "random",
-            "rate": 5,
+            "rate": 2,
             "airlines": [
                 ["ROT", 3],
                 ["RYR", 2],
