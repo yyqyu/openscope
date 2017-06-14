@@ -505,7 +505,7 @@
                ["KLM", 1],
                ["DLH", 1]
             ]
-        },
+        }, 
         {
             "origin": "LROP",
             "destination": "",
