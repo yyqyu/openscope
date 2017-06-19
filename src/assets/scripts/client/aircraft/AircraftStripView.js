@@ -371,17 +371,14 @@ export default class AircraftStripView {
      * @param destinationText {string}
      * @param isFollowingSID {boolean}
      * @param isFollowingSTAR {boolean}
-     * @param fixRestrictions {object}
      */
     updateViewForCruise(
         navMode,
         headingText = '',
         destinationText = '',
         isFollowingSID = false,
-        isFollowingSTAR = false,
-        fixRestrictions = {}
+        isFollowingSTAR = false
     ) {
-
         if (destinationText === null) {
             console.warn('Failed to update flight strip destination!');
             return;
@@ -402,14 +399,6 @@ export default class AircraftStripView {
                 if (isFollowingSTAR) {
                     this.$heading.addClass(SELECTORS.CLASSNAMES.FOLLOWING_STAR);
                     this.$destination.addClass(SELECTORS.CLASSNAMES.FOLLOWING_STAR);
-
-                    if (fixRestrictions.altitude) {
-                        this.$altitude.addClass(SELECTORS.CLASSNAMES.FOLLOWING_STAR);
-                    }
-
-                    if (fixRestrictions.speed) {
-                        this.$speed.addClass(SELECTORS.CLASSNAMES.FOLLOWING_STAR);
-                    }
                 }
 
                 break;

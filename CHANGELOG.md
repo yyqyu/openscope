@@ -27,6 +27,8 @@
 - Updates development-workflow-procedures, adds Quick Start guide to README and consolidates all documentation in the `documentation` directory [#418](https://github.com/openscope/openscope/issues/418)
 - Adds tests and verifies functionality of non-procedural departures and arrivals (support for direct route strings) [#434](https://github.com/openscope/openscope/issues/434)
 - Adds unique transponder and CID generation methods [#483](https://github.com/openscope/openscope/issues/483)
+- Add support for ranged altitude and speed restrictions in procedures [#32](https://github.com/openscope/openscope/issues/32)
+- Improve VNAV climbs and descents to better comply with restrictions [#32](https://github.com/openscope/openscope/issues/32)
 
 
 
