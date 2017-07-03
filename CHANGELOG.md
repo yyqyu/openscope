@@ -1,3 +1,25 @@
+## 5.3.0 (August 1, 2017)
+---
+### Features
+
+
+
+
+
+
+### Bugfixes
+
+
+
+
+
+
+## 5.2.1 (July 1, 2017)
+---
+### Hotfix
+- Ensure previously specified directions of turn are not preserved when a new heading instruction is given [#549](https://github.com/openscope/openscope/issues/549)
+
+
 ## 5.2.0 (July 1, 2017)
 ---
 ### Features
@@ -36,13 +58,6 @@
 - Updates Boston Logan Intl. (KBOS) - Updated procedures, added video map and terrain, modified airspace, realistic traffic [#228](https://github.com/openscope/openscope/issues/228)
 - Removes left over references to `AircraftStripView` in `AircraftModel` [#535](https://github.com/openscope/openscope/issues/535)
 
-
-
-
-
-
-
-
 ### Bugfixes
 - Fixes coordinate letter issue at SBGL [#385](https://github.com/openscope/openscope/issues/385)
 - Prevent NaNs being passed on if invalid altitude is given [#424](https://github.com/openscope/openscope/issues/424)
@@ -56,8 +71,7 @@
 - Updates `AirportModel.buildRestrictedAreas()` to build the coordinate array with the correct shape [#522](https://github.com/openscope/openscope/issues/522)
 - Adds local reference to `EventBus` inside `AircraftCommander` [#539](https://github.com/openscope/openscope/issues/539)
 - Cancel approach clearances whenever an altitude or heading instruction is given [#344](https://github.com/openscope/openscope/issues/344)
-
-
+- Make flight strips show appropriate altitude values [#546](https://github.com/openscope/openscope/issues/546)
 
 
 ## 5.1.1 (May 12, 2017)
