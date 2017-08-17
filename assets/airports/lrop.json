@@ -13,7 +13,7 @@
     "position": ["N44d34m16.00", "E26d05m06.00", "314ft"],
     "rr_radius_nm": 5,
     "rr_center": ["N44d34m16.00", "E26d05m06.00"],
-    "has_terrain": false,
+    "has_terrain": true, 
     "wind": {
         "angle": 0,
         "speed": 0
@@ -328,7 +328,7 @@
             "entryPoints": {
                 "FOCSA": ["FOCSA", "URELA", "LAPKA" ]
             },
-            "body": [["DENAK","A110+"]],
+            "body": [["DENAK","A170-|A110+"]],
             "rwy": {
                 "08R": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082","OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
                 "08L": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082","OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
@@ -349,7 +349,7 @@
             "entryPoints": {
                 "DINRO": ["DINRO", "RIVOS"]
             },
-            "body": [["NETUL", "A110+"]],
+            "body": [["NETUL", "A170-|A110+"]],
             "rwy": {
                 "08R": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
                 "08L": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
@@ -370,7 +370,7 @@
             "entryPoints": {
                 "DINRO": ["DINRO", "DIRAL"]
             },
-            "body": [["IDARU", "A110+"]],
+            "body": [["IDARU", "A170-|A110+"]],
                 "rwy": {
                     "08R": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
                     "08L": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
@@ -391,7 +391,7 @@
             "entryPoints": {
                 "ARGES": ["ARGES"]
             },
-            "body": [["OSTAL", "A110+"], "TOBAG"],
+            "body": [["OSTAL", "A170-|A110+"], "TOBAG"],
             "rwy": {
                 "08R": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
                 "08L": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
@@ -412,7 +412,7 @@
             "entryPoints": {
                 "LAMIT": ["LAMIT", "BIVBU"]
             },
-            "body": [ ["TOSVI", "A110+"], ["UVALU", "A70+"]],
+            "body": [ ["TOSVI", "A170-|A110+"], ["UVALU", "A70+"]],
             "rwy": {
                 "08R": [["OP088", "S230-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
                 "08L": [["OP088", "S230-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
@@ -434,7 +434,7 @@
                 "LAMIT": ["LAMIT", "BIVBU"],
                 "PEMOK": ["PEMOK"]
             },
-            "body": [["TOSVI", "A170+"],"OP269", ["OP268", "A70+|S230-"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261"],
+            "body": [["TOSVI", "A170-"],"OP269", ["OP268", "A70+|S230-"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261"],
             "rwy": {
                 "26R": [["RARIT", "A25+|S210-"], "_FAF26R"],
                 "26L": [["LEVTA", "A25+|S210-"], "_FAF26L"]
@@ -451,12 +451,12 @@
             "entryPoints": {
                 "SOMOV": ["SOMOV" ]
             },
-            "body": [["SORDU", "A100+"]],
+            "body": [["SORDU", "A170-|A100+"]],
             "rwy": {
-                "08R": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"]],
-                "08L": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"]],
-                "26R": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"]],
-                "26L": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"]]
+                "08R": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
+                "08L": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
+                "26R": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"],
+                "26L": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"]
             },
             "draw": [
                 ["SORDU", "TUTIX", "TEVRO", "OP083", "OP082", "OP081", "DILAS"],
@@ -472,12 +472,12 @@
             "entryPoints": {
                 "KOMAN": ["KOMAN"]
             },
-            "body": [["OBUGA", "A110+"]],
+            "body": [["OBUGA", "A170-|A110+"]],
             "rwy": {
-                "08R": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"]],
-                "08L": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"]],
-                "26R": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"]],
-                "26L": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"]]
+                "08R": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
+                "08L": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
+                "26R": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"],
+                "26L": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"]
             },
             "draw": [
                 ["OBUGA", "TEVRO", "OP083", "OP082", "OP081", "DILAS"],
@@ -505,7 +505,7 @@
                ["KLM", 1],
                ["DLH", 1]
             ]
-        }, 
+        },
         {
             "origin": "LROP",
             "destination": "",
