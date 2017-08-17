@@ -6,7 +6,7 @@
     },
     "icao": "LROP",
     "iata": "OTP",
-    "magnetic_north": 2.1,
+    "magnetic_north": 5,
     "ctr_radius": 180,
     "ctr_ceiling": 17500,
     "initial_alt": 6000,
