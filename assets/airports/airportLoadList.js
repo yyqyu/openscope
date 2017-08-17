@@ -150,6 +150,18 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             wip: true
         },
         {
+            icao: 'kabq',
+            level: 'easy',
+            name: 'Albuquerque International Sunport',
+            wip: false
+        },
+        {
+            icao: 'katl',
+            level: 'hard',
+            name: 'Hartsfield–Jackson Atlanta Int\'l',
+            wip: false
+        },
+        {
             icao: 'kbos',
             level: 'medium',
             name: 'Boston Logan International Airport',
@@ -269,6 +281,12 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     name: 'Atatürk International Airport',
         //     wip: true
         // },
+        {
+            icao: 'mdsd',
+            level: 'easy',
+            name: 'Aeropuerto Internacional Las Américas',
+            wip: false
+        },
         // {
         //     icao: 'omaa',
         //     level: 'medium',
