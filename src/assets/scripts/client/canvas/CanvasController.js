@@ -47,6 +47,7 @@ import {
 } from '../constants/globalConstants';
 import { SELECTORS } from '../constants/selectors';
 import { LOG } from '../constants/logLevel';
+import { GAME_OPTION_NAMES } from '../constants/gameOptionConstants';
 
 // Temporary const declaration here to attach to the window AND use as internal property
 const canvas = {};
@@ -89,7 +90,7 @@ export default class CanvasController {
         // has a console.warn been output for terrain?
         this.has_terrain_warning = false;
 
-        this.theme = THEME.DEFAULT;
+        this.theme = GameController.getGameOption(GAME_OPTION_NAMES.THEME);
 
         return this._init()
             .enable();
