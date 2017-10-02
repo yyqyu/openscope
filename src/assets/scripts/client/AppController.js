@@ -21,6 +21,7 @@ import GameClockView from './game/GameClockView';
 import { speech_init } from './speech';
 import { EVENT } from './constants/eventNames';
 import { SELECTORS } from './constants/selectors';
+import { GAME_OPTION_NAMES } from './constants/gameOptionConstants';
 
 /**
  * Root controller class
@@ -147,7 +148,7 @@ export default class AppController {
 
         this.spawnPatternCollection = new SpawnPatternCollection(initialAirportData, this.navigationLibrary);
         this.spawnScheduler = new SpawnScheduler(this.spawnPatternCollection, this.aircraftController);
-        this.canvasController = new CanvasController(this.$element, this.navigationLibrary);
+        this.canvasController = new CanvasController(this.$element, this.navigationLibrary, GameController.getGameOption(GAME_OPTION_NAMES.THEME));
         this.tutorialView = new TutorialView(this.$element);
         this.aircraftCommander = new AircraftCommander(this.navigationLibrary, this.aircraftController.onRequestToChangeTransponderCode);
         this.inputController = new InputController(this.$element, this.aircraftCommander, this.aircraftController, this.tutorialView);

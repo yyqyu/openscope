@@ -60,8 +60,9 @@ export default class CanvasController {
      * @constructor
      * @param $element {JQuery|HTML Element|undefined}
      * @param navigationLibrary {NavigationLibrary}
+     * @param theme {Theme}
      */
-    constructor($element, navigationLibrary) {
+    constructor($element, navigationLibrary, theme) {
         this.$window = $(window);
         this.$element = $element;
 
@@ -90,7 +91,7 @@ export default class CanvasController {
         // has a console.warn been output for terrain?
         this.has_terrain_warning = false;
 
-        this.theme = GameController.getGameOption(GAME_OPTION_NAMES.THEME);
+        this.theme = theme;
 
         return this._init()
             .enable();
