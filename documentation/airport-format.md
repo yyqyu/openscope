@@ -306,9 +306,17 @@ They're used when we need aircraft to fly over a location that doesn't have an a
 ```javascript
 "_AUTUM220015": [42.324333, -71.736833]
 ```
-* Any fixes desired a given distance out on final of a given runway will be described via the distance from the threshold. This would be the runway name, two digit distance in nautical miles, then `DME`. All of these should be marked as RNAV fixes (via the underscore prefix).
+* Any fixes desired a given distance out on final of a given runway will be described via the distance from the threshold. This would be the runway name, two digit distance in nautical miles, then `DME`. All of these should be marked as RNAV fixes (via the underscore prefix). Note that we only reference these on the _approach course_ of the runway, so if you want a fix "1 mile after the far end of Runway 36" for a departure, we would name this fix `_RWY1801DME` (aka "1 mile out on approach to Runway 18 threshold").
 ```javascript
 "_RWY33L01DME": [42.342838, -70.975751]
+```
+* Any fixes that represent the intersection of a runway's inbound course and another course to a fix will be descried using the format below. Note that the runway whose _approach course_ intersects is the one to be used, not the runway whose _departure course_ intersects.
+```javascript
+"_RWY12BSTER081": []
+```
+* Any fixes that represent the intersection of radials off of two fixes will be described by including each fix's _outbound_ radial.
+```javascript
+"_FIXXA030FIXXB180"
 ```
 
 ### Restricted Airspace
