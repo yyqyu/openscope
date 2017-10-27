@@ -663,8 +663,7 @@ export default class Pilot {
         const inboundDirection = getRadioCardinalDirectionNameForHeading(inboundHeading);
         let successMessage = `proceed direct ${fixName} and hold inbound, ${turnDirection} turns, ${legLength} legs`;
 
-        // Return early if the fix doesn't exist, unless holding at current position.
-        if (!holdPosition || (!this._fms.hasWaypoint(fixName) && !fixName === null)) {
+        if (!holdPosition || (fixName && !AirportController.airport_get.hasFixName(fixName))) {
             return [false, `unable to find fix ${fixName}`];
         }
 
