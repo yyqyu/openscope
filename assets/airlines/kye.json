@@ -1,13 +1,13 @@
 {
-    "icao": "mph",
-    "name": "Martinair",
+    "icao": "kye",
+    "name": "Sky Lease Cargo",
     "callsign": {
-        "name": "Martinair",
+        "name": "Sky Cube",
         "length": 3
     },
     "fleets": {
         "default": [
-            ["B744", 1]
+            ["MD11", 7]
         ]
     }
 }

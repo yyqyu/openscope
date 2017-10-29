@@ -1,13 +1,13 @@
 {
-    "icao": "mph",
-    "name": "Martinair",
+    "icao": "tpa",
+    "name": "Avianca Cargo",
     "callsign": {
-        "name": "Martinair",
+        "name": "Tampa",
         "length": 3
     },
     "fleets": {
         "default": [
-            ["B744", 1]
+            ["A332", 5]
         ]
     }
 }
