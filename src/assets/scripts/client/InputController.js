@@ -327,6 +327,12 @@ export default class InputController {
             return;
         }
 
+        // Check to see if the aircraft is inside our airspace.
+        // Otherwise, return and do not select
+        if (!aircraftModel.inside_ctr) {
+            return;
+        }
+
         // TODO: Refactor out the prop
         // using `prop` here so CanvasController knows which aircraft is selected
         prop.input.callsign = aircraftModel.callsign;
