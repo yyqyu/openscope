@@ -1,4 +1,4 @@
-﻿/**
+/**
  * This file lives outside of normal javascript bundle. This provides a way for contributors to add or remove
  * airports without the need to re-build the entire app. This means a contributor does not need to have node
  * installed in order to contribute.
@@ -499,7 +499,7 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             name: 'Princess Juliana International Airport',
             premium: false,
             wip: true
-           },
+        // },
         // {
         //     icao: 'uudd',
         //     level: 'easy',
@@ -570,19 +570,19 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     premium: false,
         //     wip: true
         // },
-         {
-             icao: 'wsss',
-             level: 'hard',
-             name: 'Singapore Changi International Airport',
-             premium: false,
-             wip: true
-         },
+        // {
+        //     icao: 'wsss',
+        //     level: 'hard',
+        //     name: 'Singapore Changi International Airport',
+        //     premium: false,
+        //     wip: true
+        // },
         // {
         //     icao: 'zspd',
         //     level: 'hard',
         //     name: 'Shanghai Pudong International Airport',
         //     premium: false,
         //     wip: true
-        // }
+        }
     ];
 })();
