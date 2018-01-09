@@ -47,12 +47,19 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
      */
     return [
         {
-            icao: 'ebbr',
+            icao: 'cyow',
             level: 'easy',
-            name: 'Brussels-National',
+            name: 'Ottawa Macdonald-Cartier International Airport',
             premium: false,
-            wip: true
+            wip: false
         },
+        // {
+        //     icao: 'ebbr',
+        //     level: 'easy',
+        //     name: 'Brussels-National',
+        //     premium: false,
+        //     wip: true
+        // },
         {
             icao: 'eddf',
             level: 'medium',
@@ -62,10 +69,10 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         },
         {
             icao: 'eddh',
-            level: 'easy',
+            level: 'beginner',
             name: 'Hamburg Airport',
             premium: false,
-            wip: true
+            wip: false
         },
         {
             icao: 'eddm',
@@ -116,13 +123,13 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             premium: false,
             wip: true
         },
-        {
-            icao: 'egnm',
-            level: 'beginner',
-            name: 'Leeds Bradford International Airport',
-            premium: false,
-            wip: true
-        },
+        // {
+        //     icao: 'egnm',
+        //     level: 'beginner',
+        //     name: 'Leeds Bradford International Airport',
+        //     premium: false,
+        //     wip: true
+        // },
         // {
         //     icao: 'eham',
         //     level: 'medium',
@@ -243,10 +250,10 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         // },
         {
             icao: 'klas',
-            level: 'medium',
+            level: 'hard',
             name: 'McCarran International Airport',
             premium: false,
-            wip: true
+            wip: false
         },
         // {
         //     icao: 'klax90',
@@ -255,13 +262,13 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     premium: false,
         //     wip: true
         // },
-        {
-            icao: 'klax',
-            level: 'medium',
-            name: 'Los Angeles International Airport',
-            premium: false,
-            wip: true
-        },
+        // {
+        //     icao: 'klax',
+        //     level: 'medium',
+        //     name: 'Los Angeles International Airport',
+        //     premium: false,
+        //     wip: true
+        // },
         // {
         //     icao: 'kmia',
         //     level: 'hard',
@@ -471,13 +478,13 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     premium: false,
         //     wip: true
         // },
-        {
-            icao: 'sawh',
-            level: 'beginner',
-            name: 'Aeropuerto Internacional Malvinas Argentinas',
-            premium: false,
-            wip: true
-        },
+        // {
+        //     icao: 'sawh',
+        //     level: 'beginner',
+        //     name: 'Aeropuerto Internacional Malvinas Argentinas',
+        //     premium: false,
+        //     wip: true
+        // },
         // {
         //     icao: 'sbgl',
         //     level: 'beginner',
@@ -485,13 +492,13 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     premium: false,
         //     wip: true
         // },
-        {
-            icao: 'sbgr',
-            level: 'beginner',
-            name: 'Aeroporto Internacional São Paulo-Guarulhos',
-            premium: false,
-            wip: true
-        },
+        // {
+        //     icao: 'sbgr',
+        //     level: 'beginner',
+        //     name: 'Aeroporto Internacional São Paulo-Guarulhos',
+        //     premium: false,
+        //     wip: true
+        // },
         // {
         //     icao: 'tjsj',
         //     level: 'easy',
@@ -505,7 +512,7 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             name: 'Princess Juliana International Airport',
             premium: false,
             wip: true
-        },
+        // },
         // {
         //     icao: 'uudd',
         //     level: 'easy',
@@ -534,12 +541,12 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     premium: false,
         //     wip: true
         // },
-        {
-            icao: 'vhhh',
-            level: 'medium',
-            name: 'Hong Kong Chep Lap Kok International Airport',
-            premium: false,
-            wip: true
+        // {
+        //     icao: 'vhhh',
+        //     level: 'medium',
+        //     name: 'Hong Kong Chep Lap Kok International Airport',
+        //     premium: false,
+        //     wip: true
         // },
         // {
         //     icao: 'vidp',
