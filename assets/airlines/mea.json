@@ -1,0 +1,17 @@
+{
+    "icao": "mea",
+    "name": "Middle East Airlines",
+    "callsign": {
+        "name": "CEDAR JET",
+        "length": 3,
+        "alpha": true
+    },
+    "fleets": {
+        "default": [
+            ["A320", 13]
+        ],
+        "long": [
+            ["A332", 5]
+        ]
+    }
+}
