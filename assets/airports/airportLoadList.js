@@ -379,7 +379,7 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             level: 'medium',
             name: 'Bucharest Henri Coanda International Airport',
             premium: false,
-            wip: false,
+            wip: false
         },
         // {
         //     icao: 'ltba',
