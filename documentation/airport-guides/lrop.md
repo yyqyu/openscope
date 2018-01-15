@@ -2,14 +2,14 @@
 Henri Coanda International Aiport (LROP / OTP), Otopeni, Bucharest, Romania, EU
 120,700 annual operations in 2016 ([BUCHAREST AIRPORTS COMPANY](http://www.bucharestairports.ro/ro/noutati/trafic-aerian-record-in-anul-2016))
 
-Located at about 7 miles north of Bucharest, the capital of Romania, it is the main international airport in the country. It has become the busiest airport since Baneasa Aurel Vlaicu Airport was converted in a general aviation airport and all low cost operations were moved to Otopeni. Traffic consists of medium aircrafts (mostly from A320 and B737 families) with seldom heavy arrivals.
+Located at about 7 miles north of Bucharest, the capital of Romania, it is the main international airport in the country. It has become the busiest airport since Baneasa Aurel Vlaicu Airport was converted into a general aviation airport and all low cost operations were moved to Otopeni. Traffic consists of medium aircraft (mostly from A320 and B737 families) with seldom heavy arrivals.
 
 The airport has two parallel runways 08R/L, 26L/R each of 11483ft/3500m. Runway 08L/26R is shortened due to temporary work in progress at threshold 08L, landing distance available is 2237m. ILS CAT III A/B is available at both 08 runways and ILS CAT I at runways 26.
 
 The airport is the main hub for TAROM (Romania's national airline operator) and Blue Air (the first low cost Romanian operator) and also hosts a military apron used by the Romanian Air Force.
 
 ### Airspace
-Bucharest Terminal Movement Area is a class A airspace starting from 2000 feet and ending at FL175, spreading out about 30 nm in each cardinal direction. Transition altitude is 4000 feet.
+Bucharest Terminal Movement Area is a class A airspace, equivalent to American class B, starting from 2000 feet and ending at FL175, spreading out about 30 nm in each cardinal direction. Transition altitude is 4000 feet.
 
 Airspace above Bucharest is restricted (LRR3) up to FL105, entering it requires special permission from the local authorities. Clinceni danger area (LRD100) is temprary activated during the summer with parachute jumping activity up to FL130. 
 
