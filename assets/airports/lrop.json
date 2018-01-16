@@ -370,10 +370,10 @@
               "BUKEL": ["BUKEL"]
             },
             "draw": [
-                ["^OP884", "ETUXA", "BUKEL"],
-                ["^OP883", "ETUXA", "BUKEL"],
-                ["^OP662", "OP667", "DESUX", "BUKEL"],
-                ["^OP661", "OP667", "DESUX", "BUKEL"]
+                ["OP884", "ETUXA", "BUKEL"],
+                ["OP883", "ETUXA", "BUKEL"],
+                ["OP662", "OP667", "DESUX", "BUKEL"],
+                ["OP661", "OP667", "DESUX", "BUKEL"]
             ]
         },
         "DENAK": {
@@ -391,10 +391,10 @@
                 "DENAK": ["DENAK"]
             },
             "draw": [
-                ["^OP884", "ETUXA", "EKSUN", "DENAK"],
-                ["^OP883", "ETUXA", "EKSUN", "DENAK"],
-                ["^OP662", "OP667", "DENAK"],
-                ["^OP661", "OP667", "DENAK"]
+                ["OP884", "ETUXA", "EKSUN", "DENAK"],
+                ["OP883", "ETUXA", "EKSUN", "DENAK"],
+                ["OP662", "OP667", "DENAK"],
+                ["OP661", "OP667", "DENAK"]
             ]
         },
         "IDARU": {
@@ -412,10 +412,10 @@
                 "IDARU": ["IDARU"]
             },
             "draw": [
-                ["^OP882", "^OP884", "OP887", "IDARU"],
-                ["^OP882", "^OP884", "OP888", "IDARU"],
-                ["^OP662", "OP667", "ETOGO", "IDARU"],
-                ["^OP661", "OP667", "ETOGO", "IDARU"]
+                ["OP882", "OP884", "OP887", "IDARU"],
+                ["OP882", "OP884", "OP888", "IDARU"],
+                ["OP662", "OP667", "ETOGO", "IDARU"],
+                ["OP661", "OP667", "ETOGO", "IDARU"]
             ]
         },
         "NETUL": {
@@ -435,8 +435,8 @@
             "draw": [
                 ["OP887", "NETUL"],
                 ["OP888", "NETUL"],
-                ["^OP662", "OP667", "ETOGO", "NETUL"],
-                ["^OP661", "OP667", "ETOGO", "NETUL"]
+                ["OP662", "OP667", "ETOGO", "NETUL"],
+                ["OP661", "OP667", "ETOGO", "NETUL"]
             ]
         },
         "POLUN": {
@@ -454,8 +454,8 @@
                 "POLUN": ["POLUN"]
             },
             "draw": [
-                ["^OP884", "OP889", "USIRO", "POLUN"],
-                ["^OP883", "OP889", "USIRO", "POLUN"],
+                ["OP884", "OP889", "USIRO", "POLUN"],
+                ["OP883", "OP889", "USIRO", "POLUN"],
                 ["OP665", "SISGU", "POLUN"],
                 ["OP666", "SISGU", "POLUN"]
             ]
@@ -475,10 +475,10 @@
                 "SOKRU": ["SOKRU"]
             },
             "draw": [
-                ["^OP881", "OP890", "OP891", "GOMDI", "SOKRU"],
-                ["^OP882", "OP890", "OP891", "GOMDI", "SOKRU"],
-                ["^OP663", "UTOKI", "SOKRU"],
-                ["^OP664", "UTOKI", "SOKRU"]
+                ["OP881", "OP890", "OP891", "GOMDI", "SOKRU"],
+                ["OP882", "OP890", "OP891", "GOMDI", "SOKRU"],
+                ["OP663", "UTOKI", "SOKRU"],
+                ["OP664", "UTOKI", "SOKRU"]
             ]
         }
     },
