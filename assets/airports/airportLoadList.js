@@ -333,6 +333,34 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             wip: false
         },
         {
+            icao: 'ksea1',
+            level: 'medium',
+            name: 'KSEA: Approach: Feeder, 34apch',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ksea2',
+            level: 'medium',
+            name: 'KSEA: Approach: Feeder, 42apch',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ksea3',
+            level: 'medium',
+            name: 'KSEA: Approach: Feeder, 50apch',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ksea4',
+            level: 'medium',
+            name: 'KSEA: Approach: Feeder, 64apch',
+            premium: false,
+            wip: false
+        },
+        {
             icao: 'ksfo',
             level: 'medium',
             name: 'San Francisco International Airport',
@@ -349,7 +377,28 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         {
             icao: 'ktpa',
             level: 'easy',
-            name: 'Tampa International Airport',
+            name: 'Tampa International Airport, 26.5acph',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ktpa1',
+            level: 'easy',
+            name: 'KTPA: Final Approach, 34acph',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ktpa2',
+            level: 'easy',
+            name: 'KTPA: Final Approach, 50acph',
+            premium: false,
+            wip: false
+        },
+        {
+            icao: 'ktpa3',
+            level: 'easy',
+            name: 'KTPA: Mixed, 35acph',
             premium: false,
             wip: false
         },
