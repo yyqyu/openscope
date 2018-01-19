@@ -355,78 +355,108 @@
     "arrivalRunway": "08R",
     "departureRunway": "08L",
     "sids": {
-        "BUKEL": {
-            "icao": "BUKEL",
-            "name": "Bukel",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "BUKEL1K": {
+            "icao": "BUKEL1K",
+            "name": "Bukel One Kilo",
             "rwy": {
-                "08L": [["^OP883", "S270-"], "ETUXA"],
-                "08R": [["^OP884", "S270-"], "ETUXA"],
-                "26L": [["^OP661", "S210-"], ["OP667", "A45+"], "DESUX"],
-                "26R": [["^OP662", "S210-"], ["OP667", "A45+"], "DESUX"]
+                "LROP08L": [["^OP883", "S270-"]],
+                "LROP08R": [["^OP884", "S270-"]]
             },
-            "body": [],
+            "body": ["ETUXA"],
             "exitPoints": {
               "BUKEL": ["BUKEL"]
             },
             "draw": [
                 ["OP884", "ETUXA", "BUKEL"],
-                ["OP883", "ETUXA", "BUKEL"],
+                ["OP883", "ETUXA", "BUKEL"]
+            ]
+        },
+        "BUKEL1M": {
+            "icao": "BUKEL1M",
+            "name": "Bukel One Mike",
+            "rwy": {
+                "LROP26L": [["^OP661", "S210-"]],
+                "LROP26R": [["^OP662", "S210-"]]
+            },
+            "body": [["OP667", "A45+"], "DESUX"],
+            "exitPoints": {
+              "BUKEL": ["BUKEL"]
+            },
+            "draw": [
                 ["OP662", "OP667", "DESUX", "BUKEL"],
                 ["OP661", "OP667", "DESUX", "BUKEL"]
             ]
         },
-        "DENAK": {
-            "icao": "DENAK",
-            "name": "Denak",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "DENAK1K": {
+            "icao": "DENAK1K",
+            "name": "Denak One Kilo",
             "rwy": {
-                "08L": [["^OP883", "S270-"], "ETUXA", "EKSUN"],
-                "08R": [["^OP884", "S270-"], "ETUXA", "EKSUN"],
-                "26L": [["^OP661", "S210-"], "OP667"],
-                "26R": [["^OP662", "S210-"], "OP667"]
+                "LROP08L": [["^OP883", "S270-"]],
+                "LROP08R": [["^OP884", "S270-"]]
             },
-            "body": [],
+            "body": ["ETUXA", "EKSUN"],
             "exitPoints": {
                 "DENAK": ["DENAK"]
             },
             "draw": [
                 ["OP884", "ETUXA", "EKSUN", "DENAK"],
-                ["OP883", "ETUXA", "EKSUN", "DENAK"],
+                ["OP883", "ETUXA", "EKSUN", "DENAK"]
+            ]
+        },
+        "DENAK1M": {
+            "icao": "DENAK1M",
+            "name": "Denak One Mike",
+            "rwy": {
+                "LROP26L": [["^OP661", "S210-"]],
+                "LROP26R": [["^OP662", "S210-"]]
+            },
+            "body": ["OP667"],
+            "exitPoints": {
+                "DENAK": ["DENAK"]
+            },
+            "draw": [
                 ["OP662", "OP667", "DENAK"],
                 ["OP661", "OP667", "DENAK"]
             ]
         },
-        "IDARU": {
-            "icao": "IDARU",
-            "name": "Idaru",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "IDARU1K": {
+            "icao": "IDARU1K",
+            "name": "Idaru One Kilo",
             "rwy": {
-                "08R": ["OP888"],
-                "08L": ["OP887"],
-                "26R": [["^OP662", "S210-"], ["OP667", "S270-"], "ETOGO"],
-                "26L": [["^OP661", "S210-"], ["OP667", "S270-"], "ETOGO"]
+                "LROP08L": ["OP887"],
+                "LROP08R": ["OP888"]
             },
             "body": [],
             "exitPoints": {
                 "IDARU": ["IDARU"]
             },
             "draw": [
-                ["OP882", "OP884", "OP887", "IDARU"],
-                ["OP882", "OP884", "OP888", "IDARU"],
+                ["OP887", "IDARU"],
+                ["OP888", "IDARU"]
+            ]
+        },
+        "IDARU1M": {
+            "icao": "IDARU1M",
+            "name": "Idaru One Mike",
+            "rwy": {
+                "LROP26R": [["^OP662", "S210-"]],
+                "LROP26L": [["^OP661", "S210-"]]
+            },
+            "body": [["OP667", "S270-"], "ETOGO"],
+            "exitPoints": {
+                "IDARU": ["IDARU"]
+            },
+            "draw": [
                 ["OP662", "OP667", "ETOGO", "IDARU"],
                 ["OP661", "OP667", "ETOGO", "IDARU"]
             ]
         },
-        "NETUL": {
-            "icao": "NETUL",
-            "name": "Netul",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "NETUL1K": {
+            "icao": "NETUL1K",
+            "name": "Netul One Kilo",
             "rwy": {
-                "08L": ["OP887"],
-                "08R": ["OP888"],
-                "26L": [["^OP661", "S210-"], ["OP667", "S270-"], "ETOGO"],
-                "26R": [["^OP662", "S210-"], ["OP667", "S270-"], "ETOGO"]
+                "LROP08L": ["OP887"],
+                "LROP08R": ["OP888"]
             },
             "body": [],
             "exitPoints": {
@@ -434,198 +464,311 @@
             },
             "draw": [
                 ["OP887", "NETUL"],
-                ["OP888", "NETUL"],
+                ["OP888", "NETUL"]
+            ]
+        },
+        "NETUL1M": {
+            "icao": "NETUL1M",
+            "name": "Netul One Mike",
+            "rwy": {
+                "LROP26L": [["^OP661", "S210-"]],
+                "LROP26R": [["^OP662", "S210-"]]
+            },
+            "body": [["OP667", "S270-"], "ETOGO"],
+            "exitPoints": {
+                "NETUL": ["NETUL"]
+            },
+            "draw": [
                 ["OP662", "OP667", "ETOGO", "NETUL"],
                 ["OP661", "OP667", "ETOGO", "NETUL"]
             ]
         },
-        "POLUN": {
-            "icao": "POLUN",
-            "name": "Polun",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "POLUN1K": {
+            "icao": "POLUN1K",
+            "name": "Polun One Kilo",
             "rwy": {
-                "08L": [["^OP883", "A40+|S250-"], "OP889", "USIRO"],
-                "08R": [["^OP884", "A40+|S250-"], "OP889", "USIRO"],
-                "26L": [["OP666", "A40+"], "SISGU"],
-                "26R": [["OP665", "A40+"], "SISGU"]
+                "LROP08L": [["^OP883", "A40+|S250-"]],
+                "LROP08R": [["^OP884", "A40+|S250-"]]
             },
-            "body": [],
+            "body": ["OP889", "USIRO"],
             "exitPoints": {
                 "POLUN": ["POLUN"]
             },
             "draw": [
                 ["OP884", "OP889", "USIRO", "POLUN"],
-                ["OP883", "OP889", "USIRO", "POLUN"],
+                ["OP883", "OP889", "USIRO", "POLUN"]
+            ]
+        },
+        "POLUN1M": {
+            "icao": "POLUN1M",
+            "name": "Polun One Mike",
+            "rwy": {
+                "LROP26L": [["OP666", "A40+"]],
+                "LROP26R": [["OP665", "A40+"]]
+            },
+            "body": ["SISGU"],
+            "exitPoints": {
+                "POLUN": ["POLUN"]
+            },
+            "draw": [
                 ["OP665", "SISGU", "POLUN"],
                 ["OP666", "SISGU", "POLUN"]
             ]
         },
-        "SOKRU": {
-            "icao": "SOKRU",
-            "name": "Sokru",
-            "suffix": {"08L": "1K", "08R": "1K", "26L": "1M", "26R": "1M"},
+        "SOKRU1K": {
+            "icao": "SOKRU1K",
+            "name": "Sokru One Kilo",
             "rwy": {
-                "08L": [["^OP881", "A09+|S220-"], "OP890", ["OP891", "A45+"], "GOMDI"],
-                "08R": [["^OP882", "S220-"], "OP890", ["OP891", "A45+"], "GOMDI"],
-                "26L": [["^OP664", "S250-"], "UTOKI"],
-                "26R": [["^OP663", "S250-"], "UTOKI"]
+                "LROP08L": [["^OP881", "A09+|S220-"]],
+                "LROP08R": [["^OP882", "S220-"]]
             },
-            "body": [],
+            "body": ["OP890", ["OP891", "A45+"], "GOMDI"],
             "exitPoints": {
                 "SOKRU": ["SOKRU"]
             },
             "draw": [
                 ["OP881", "OP890", "OP891", "GOMDI", "SOKRU"],
-                ["OP882", "OP890", "OP891", "GOMDI", "SOKRU"],
+                ["OP882", "OP890", "OP891", "GOMDI", "SOKRU"]
+            ]
+        },
+        "SOKRU1M": {
+            "icao": "SOKRU1M",
+            "name": "Sokru One Mike",
+            "rwy": {
+                "LROP26L": [["^OP664", "S250-"]],
+                "LROP26R": [["^OP663", "S250-"]]
+            },
+            "body": ["UTOKI"],
+            "exitPoints": {
+                "SOKRU": ["SOKRU"]
+            },
+            "draw": [
                 ["OP663", "UTOKI", "SOKRU"],
                 ["OP664", "UTOKI", "SOKRU"]
             ]
         }
     },
     "stars": {
-        "DENAK" : {
-            "icao": "DENAK",
-            "name": "Denak",
-            "suffix": {"08L": "1U", "08R": "1U", "26L": "2X", "26R": "2X"},
+        "DENAK1U" : {
+            "icao": "DENAK1U",
+            "name": "Denak One Uniform",
             "entryPoints": {
                 "DENAK": [["DENAK", "A170-|A110+"]]
             },
-            "body": [],
+            "body": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
-                "08R": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
-                "26L": [["OKAGO", "A45+"], ["BOGVI", "A35+|S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"]],
-                "26R": [["OKAGO", "A45+"], ["BOGVI", "A35+|S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"]]
+                "LROP08L": [["OBELA", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "LROP08R": [["DILAS", "A25+|S210-"], "_FAF08R", "_THR08R"]
             },
             "draw": [
                 ["DENAK", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
-                ["DENAK", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"],
-                ["DENAK", "OKAGO", "BOGVI", "OP262", "OP261", "RARIT"],
-                ["DENAK", "OKAGO", "BOGVI", "OP262", "OP261", "LEVTA"]
+                ["DENAK", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"]
             ]
         },
-        "IDARU" : {
+        "DENAK2X" : {
+            "icao": "DENAK2X",
+            "name": "Denak Two Xray",
+            "entryPoints": {
+                "DENAK": [["DENAK", "A170-|A110+"]]
+            },
+            "body": [["OKAGO", "A45+"], ["BOGVI", "A35+|S220-"], "OP262", "OP261"],
+            "rwy": {
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+            },
+            "draw": [
+                ["DENAK", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
+                ["DENAK", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"]
+            ]
+        },
+        "IDARU2U" : {
             "icao": "IDARU",
-            "name": "Idaru",
-            "suffix": {"08L": "2U", "08R": "2U", "26L": "1X", "26R": "1X"},
+            "name": "Idaru Two Uniform",
             "entryPoints": {
                 "IDARU": [["IDARU", "A170-|A110+"]]
             },
-            "body": [["IDARU", "A170-|A110+"]],
+            "body": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
                 "rwy": {
-                    "08L": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
-                    "08R": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
-                    "26L": [["DILIM", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                    "26R": [["DILIM", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                    "LROP08L": [["OBELA", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                    "LROP08R": [["DILAS", "A25+|S210-"], "_FAF08R", "_THR08R"]
                 },
                 "draw": [
-                    ["IDARU", "DEXIM", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
-                    ["IDARU", "DEXIM", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"],
                     ["IDARU", "DILIM", "OP262", "OP261", "RARIT"],
                     ["IDARU", "DILIM", "OP262", "OP261", "LEVTA"]
                 ]
         },
-        "NETUL" : {
-            "icao": "NETUL",
-            "name": "Netul",
-            "suffix": {"08L": "2U", "08R": "2U", "26L": "1X", "26R": "1X"},
+        "IDARU1X" : {
+            "icao": "IDARU",
+            "name": "Idaru One Xray",
+            "entryPoints": {
+                "IDARU": [["IDARU", "A170-|A110+"]]
+            },
+            "body": [["DILIM", "S220-"], "OP262", "OP261"],
+                "rwy": {
+                    "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                    "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+                },
+                "draw": [
+                    ["IDARU", "DILIM", "OP262", "OP261", "RARIT"],
+                    ["IDARU", "DILIM", "OP262", "OP261", "LEVTA"]
+                ]
+        },
+        "NETUL2U" : {
+            "icao": "NETUL2U",
+            "name": "Netul Two Uniform",
             "entryPoints": {
                 "NETUL": [["NETUL", "A170-|A110+"]]
             },
-            "body": [["NETUL", "A170-|A110+"]],
+            "body": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
-                "08R": ["DEXIM", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
-                "26L": [["DILIM", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": [["DILIM", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                "LROP08L": [["OBELA", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "LROP08R": [["DILAS", "A25+|S210-"], "_FAF08R", "_THR08R"]
             },
             "draw": [
                 ["NETUL", "DEXIM", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
-                ["NETUL", "DEXIM", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"],
+                ["NETUL", "DEXIM", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"]
+            ]
+        },
+        "NETUL1X" : {
+            "icao": "NETUL1X",
+            "name": "Netul One Xray",
+            "entryPoints": {
+                "NETUL": [["NETUL", "A170-|A110+"]]
+            },
+            "body": [["DILIM", "S220-"], "OP262", "OP261"],
+            "rwy": {
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+            },
+            "draw": [
                 ["NETUL", "DILIM", "OP262", "OP261", "RARIT"],
                 ["NETUL", "DILIM", "OP262", "OP261", "LEVTA"]
             ]
         },
-        "OBUGA" : {
-            "icao": "OBUGA",
-            "name": "Obuga",
-            "suffix": {"08L": "1U", "08R": "1U", "26L": "1X", "26R": "1X"},
+        "OBUGA1U" : {
+            "icao": "OBUGA1U",
+            "name": "Obuga One Uniform",
             "entryPoints": {
                 "OBUGA": [["OBUGA", "A170-|A110+"]]
             },
-            "body": [],
+            "body": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
-                "08R": [["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
-                "26L": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                "LROP08L": [["DILAS", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "LROP08R": [["OBELA", "A25+|S210-"], "_FAF08R", "_THR08R"]
             },
             "draw": [
                 ["OBUGA", "TEVRO", "OP083", "OP082", "OP081", "DILAS"],
-                ["OBUGA", "TEVRO", "OP083", "OP082", "OP081", "OBELA"],
+                ["OBUGA", "TEVRO", "OP083", "OP082", "OP081", "OBELA"]
+            ]
+        },
+        "OBUGA1X" : {
+            "icao": "OBUGA1X",
+            "name": "Obuga One Xray",
+            "entryPoints": {
+                "OBUGA": [["OBUGA", "A170-|A110+"]]
+            },
+            "body": ["UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261"],
+            "rwy": {
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+            },
+            "draw": [
                 ["OBUGA", "UTIDI", "TUMOP", "ESUXU", "ITVUK", "IVDEK", "OP262", "OP261", "RARIT"],
                 ["OBUGA", "UTIDI", "TUMOP", "ESUXU", "ITVUK", "IVDEK", "OP262", "OP261", "LEVTA"]
             ]
         },
-        "OSTAL" : {
-            "icao": "OSTAL",
-            "name": "Ostal",
-            "suffix": {"08L": "1U", "08R": "1U", "26L": "1X", "26R": "1X"},
+        "OSTAL1U" : {
+            "icao": "OSTAL1U",
+            "name": "Ostal One Uniform",
             "entryPoints": {
                 "OSTAL": [["OSTAL", "A170-|A110+"]]
             },
-            "body": ["TOBAG"],
+            "body": ["TOBAG", ["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08L"],
-                "08R": [["IPRAS", "A70+"], ["INDOR", "A70+|S240-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08R"],
-                "26L": [["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": [["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                "LROP08L": [["OBELA", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "LROP08R": [["DILAS", "A25+|S210-"], "_FAF08R", "_THR08R"]
              },
              "draw": [
                   ["OSTAL", "TOBAG", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
-                  ["OSTAL", "TOBAG", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"],
+                  ["OSTAL", "TOBAG", "IPRAS", "INDOR", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"]
+              ]
+        },
+        "OSTAL1X" : {
+            "icao": "OSTAL1X",
+            "name": "Ostal One Xray",
+            "entryPoints": {
+                "OSTAL": [["OSTAL", "A170-|A110+"]]
+            },
+            "body": ["TOBAG", ["IVDEK", "S220-"], "OP262", "OP261"],
+            "rwy": {
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+             },
+             "draw": [
                   ["OSTAL", "TOBAG", "IVDEK", "OP262", "OP261", "LEVTA"],
                   ["OSTAL", "TOBAG", "IVDEK", "OP262", "OP261", "RARIT"]
               ]
         },
-        "SORDU" : {
-            "icao": "SORDU",
-            "name": "Sordu",
-            "suffix": {"08L": "1U", "08R": "1U", "26L": "1X", "26R": "1X"},
+        "SORDU1U" : {
+            "icao": "SORDU1U",
+            "name": "Sordu One Uniform",
             "entryPoints": {
                 "SORDU": [["SORDU", "A170-|A110+"]]
             },
-            "body": [],
+            "body": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
-                "08R": ["TUTIX", ["TEVRO", "A70+|S240-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
-                "26L": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                "LROP08L": [["DILAS", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "LROP08R": [["OBELA", "A25+|S210-"], "_FAF08R", "_THR08R"]
             },
             "draw": [
                 ["SORDU", "TUTIX", "TEVRO", "OP083", "OP082", "OP081", "DILAS"],
-                ["SORDU", "TUTIX", "TEVRO", "OP083", "OP082", "OP081", "OBELA"],
+                ["SORDU", "TUTIX", "TEVRO", "OP083", "OP082", "OP081", "OBELA"]
+            ]
+        },
+        "SORDU1X" : {
+            "icao": "SORDU1X",
+            "name": "Sordu One Xray",
+            "entryPoints": {
+                "SORDU": [["SORDU", "A170-|A110+"]]
+            },
+            "body": ["DONOX", "UTIDI", ["TUMOP", "A70+"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261"],
+            "rwy": {
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+            },
+            "draw": [
                 ["SORDU", "DONOX", "UTIDI", "TUMOP", "ESUXU", "ITVUK", "IVDEK", "OP262", "OP261", "RARIT"],
                 ["SORDU", "DONOX", "UTIDI", "TUMOP", "ESUXU", "ITVUK", "IVDEK", "OP262", "OP261", "LEVTA"]
             ]
         },
-        "TOSVI" : {
-            "icao": "TOSVI",
-            "name": "Tosvi",
-            "suffix": {"08L": "2U", "08R": "2U", "26L": "3X", "26R": "3X"},
+        "TOSVI2U" : {
+            "icao": "TOSVI2U",
+            "name": "Tosvi Two Uniform",
             "entryPoints": {
                 "TOSVI": [["TOSVI", "A170-|A110+"]]
             },
-            "body": [["UVALU", "A70+"]],
+            "body": [["UVALU", "A70+"], ["OP088", "S230-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081"],
             "rwy": {
-                "08L": [["OP088", "S230-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["DILAS", "A25+|S210-"], "_FAF08L"],
-                "08R": [["OP088", "S230-"], ["OP087", "A70-|S230-"], "OP086", "OP085", ["OP084", "A35+|S220-"], ["OP083", "A35-|S220-"], "OP082", "OP081", ["OBELA", "A25+|S210-"], "_FAF08R"],
-                "26L": ["OP267", ["INDOR", "A70+"], ["OP265", "S230-"], "OP264", ["BOGVI", "A35+|S220-"], "OP262", "OP261", ["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": ["OP267", ["INDOR", "A70+"], ["OP265", "S230-"], "OP264", ["BOGVI", "A35+|S220-"], "OP262", "OP261", ["RARIT", "A25+|S210-"], "_FAF26R"]
+                "08L": [["DILAS", "A25+|S210-"], "_FAF08L", "_THR08L"],
+                "08R": [["OBELA", "A25+|S210-"], "_FAF08R", "_THR08R"]
             },
             "draw": [
                 ["TOSVI", "UVALU", "OP088", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "DILAS"],
-                ["TOSVI", "UVALU", "OP088", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"],
+                ["TOSVI", "UVALU", "OP088", "OP087", "OP086", "OP085", "OP084", "OP083", "OP082", "OP081", "OBELA"]
+            ]
+        },
+        "TOSVI3X" : {
+            "icao": "TOSVI3X",
+            "name": "Tosvi Three Xray",
+            "entryPoints": {
+                "TOSVI": [["TOSVI", "A170-|A110+"]]
+            },
+            "body": [["UVALU", "A70+"], "OP267", ["INDOR", "A70+"], ["OP265", "S230-"], "OP264", ["BOGVI", "A35+|S220-"], "OP262", "OP261"],
+            "rwy": {
+                "26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
+            },
+            "draw": [
                 ["TOSVI", "UVALU", "OP267", "INDOR", "OP265", "OP264", "BOGVI", "OP262", "OP261", "LEVTA"],
                 ["TOSVI", "UVALU", "OP267", "INDOR", "OP265", "OP264", "BOGVI", "OP262", "OP261", "RARIT"]
             ]
@@ -633,14 +776,13 @@
         "TOSVI1R" : {
             "icao": "TOSVI1R",
             "name": "Tosvi One Romeo",
-            "suffix": {"26R": "", "26L": ""},
             "entryPoints": {
                 "TOSVI": [["TOSVI", "A170-|A110+"]]
             },
             "body": ["OP269", ["OP268", "A70+|S230-"], ["ESUXU", "S230-"], "ITVUK", ["IVDEK", "S220-"], "OP262", "OP261"],
             "rwy": {
-                "26L": [["LEVTA", "A25+|S210-"], "_FAF26L"],
-                "26R": [["RARIT", "A25+|S210-"], "_FAF26R"]
+                "LROP26L": [["LEVTA", "A25+|S210-"], "_FAF26L", "_THR26L"],
+                "LROP26R": [["RARIT", "A25+|S210-"], "_FAF26R", "_THR26R"]
             },
             "draw": [
                 ["TOSVI", "OP269", "OP268", "ESUXU", "ITVUK", "IVDEK", "OP262", "OP261", "LEVTA"],
@@ -653,7 +795,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.SOKRU.SOKRU..ENIMA",
+            "route": "LROP.SOKRU1K.SOKRU..ENIMA",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -671,7 +813,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.BUKEL.BUKEL..EDETA",
+            "route": "LROP.BUKEL1K.BUKEL..EDETA",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -689,7 +831,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.DENAK.DENAK..KODRU",
+            "route": "LROP.DENAK1K.DENAK..KODRU",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -705,7 +847,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.NETUL.NETUL..RIVOS..DINRO",
+            "route": "LROP.NETUL1K.NETUL..RIVOS..DINRO",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -721,7 +863,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.IDARU.IDARU..DIRAL..DINRO",
+            "route": "LROP.IDARU1K.IDARU..DIRAL..DINRO",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -737,7 +879,7 @@
             "origin": "LROP",
             "destination": "",
             "category": "departure",
-            "route": "LROP.POLUN.POLUN..TIMUR",
+            "route": "LROP.POLUN1K.POLUN..TIMUR",
             "altitude": "",
             "speed": "",
             "method": "random",
@@ -752,7 +894,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "LAMIT..BIVBU..TOSVI.TOSVI.LROP",
+            "route": "LAMIT..BIVBU..TOSVI.TOSVI2U.LROP",
             "altitude": [11000, 17000],
             "speed": 250,
             "method": "wave",
@@ -774,7 +916,21 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "BALIK..KOMAN..OBUGA.OBUGA.LROP",
+            "route": "LAMIT..BIVBU..TOSVI.TOSVI1R.LROP",
+            "altitude": [11000, 17000],
+            "speed": 250,
+            "method": "random",
+            "rate": 2,
+            "airlines": [
+                ["ROT", 2],
+                ["RYR", 1]
+            ]
+        },
+        {
+            "origin": "",
+            "destination": "LROP",
+            "category": "arrival",
+            "route": "BALIK..KOMAN..OBUGA.OBUGA1U.LROP",
             "altitude": [14000, 17000],
             "speed": 250,
             "method": "random",
@@ -790,7 +946,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "BALIK..ARGES..OSTAL.OSTAL.LROP",
+            "route": "BALIK..ARGES..OSTAL.OSTAL1U.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
@@ -806,7 +962,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "FOCSA..URELA..LAPKA..DENAK.DENAK.LROP",
+            "route": "FOCSA..URELA..LAPKA..DENAK.DENAK1U.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
@@ -822,7 +978,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "DINRO..RIVOS..NETUL.NETUL.LROP",
+            "route": "DINRO..RIVOS..NETUL.NETUL1U.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
@@ -835,7 +991,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "DINRO..DIRAL..IDARU.IDARU.LROP",
+            "route": "DINRO..DIRAL..IDARU.IDARU1U.LROP",
             "altitude":  [15000, 17000],
             "speed": 320,
             "method": "random",
@@ -848,7 +1004,7 @@
             "origin": "",
             "destination": "LROP",
             "category": "arrival",
-            "route": "SOMOV..ORTIP..SORDU.SORDU.LROP",
+            "route": "SOMOV..ORTIP..SORDU.SORDU1U.LROP",
             "altitude": [14000, 17000],
             "speed": 320,
             "method": "random",
