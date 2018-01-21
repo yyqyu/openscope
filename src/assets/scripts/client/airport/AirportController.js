@@ -163,6 +163,16 @@ class AirportController {
 
         nextAirportModel.set(airportJson);
     }
+
+    /**
+     * @for InputController
+     * @property airac
+     * @return {string}
+    */
+    getAiracCycle() {
+        return this.current.airac.toString();
+    }
+
     /**
      * Retrieve a specific `AirportModel` instance
      *
