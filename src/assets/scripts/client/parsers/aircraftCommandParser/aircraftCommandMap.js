@@ -9,6 +9,7 @@
  * @final
  */
 export const SYSTEM_COMMANDS = {
+    airac: 'airac',
     auto: 'auto',
     clear: 'clear',
     pause: 'pause',
