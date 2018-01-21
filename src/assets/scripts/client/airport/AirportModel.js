@@ -115,6 +115,15 @@ export default class AirportModel {
         this.wip = null;
 
         /**
+         * This is what AIRAC cycle that the airport has been based off
+         *
+         * @property airac
+         * @type {number}
+         * @default null
+        */
+        this.airac = null;
+
+        /**
          * @property radio
          * @type
          * @default null
@@ -362,6 +371,7 @@ export default class AirportModel {
 
         this.setCurrentPosition(data.position, degreesToRadians(data.magnetic_north));
 
+        this.airac = _get(data, 'airac', this.airac);
         this.radio = _get(data, 'radio', this.radio);
         this.has_terrain = _get(data, 'has_terrain', false);
         this.airways = _get(data, 'airways', {});
