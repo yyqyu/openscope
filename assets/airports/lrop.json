@@ -217,6 +217,7 @@
         "BALIK"  : ["N43d40m36.001", "E27d18m00.000"],
         "BUKEL"  : ["N45d04m40.121", "E25d43m32.572"],
         "BULEN"  : ["N43d45m00.000", "E25d49m00.000"],
+        "CND"    : ["N44d17m08.001", "E28d28m41.998"],
         "DENAK"  : ["N45d00m08.205", "E26d26m08.489"],
         "DESUX"  : ["N44d56m22.808", "E25d50m05.231"],
         "DEXIM"  : ["N44d42m33.075", "E26d45m14.335"],
@@ -247,6 +248,7 @@
         "LAMIT"  : ["N45d06m14.320", "E23d22m29.161"],
         "LAPKA"  : ["N45d17m33.518", "E26d30m32.669"],
         "LEVTA"  : ["N44d35m22.004", "E26d24m34.540"],
+        "NERDI"  : ["N45d18m45.698", "E23d42m11.260"],
         "NETUL"  : ["N44d41m43.375", "E26d58m42.826"],
         "OBELA"  : ["N44d32m43.559", "E25d49m38.210"],
         "OBUGA"  : ["N44d06m32.436", "E26d05m39.380"],
@@ -293,6 +295,7 @@
         "OTR"    : ["N44d35m16.770", "E26d14m07.330"],
         "PELUR"  : ["N45d17m12.278", "E25d29m17.678"],
         "PEMOK"  : ["N44d21m52.891", "E24d20m54.470"],
+        "POGAV"  : ["N46d46m54.001", "E28d10m00.001"],
         "POLUN"  : ["N44d14m14.722", "E25d13m24.144"],
         "RARIT"  : ["N44d36m04.377", "E26d24m53.323"],
         "RASUB"  : ["N43d58m44.000", "E25d25m05.998"],
@@ -319,13 +322,18 @@
         "VEVIN"  : ["N44d42m47.001", "E26d39m06.998"],
         "VIKBI"  : ["N44d15m30.999", "E24d39m20.998"]
     },
-    "_airways": {
-        "M747": ["ENIMA", "SOKRU", "VEVIN", "IDARU", "DIRAL"],
-        "L5":   ["UBOGU", "TOSVI", "NETUL", "RIVOS"],
+    "airways": {
+        "L5":   ["UBOGU", "TOSVI", "NETUL", "RIVOS", "CND"],
         "L601": ["DENAK", "VEVIN"],
-        "P727": ["ENIMA", "ARGES"],
+        "L602": ["KOMAN", "NERDI"],
+        "L622": ["KOMAN", "OBUGA", "FLR", "ENIMA", "IRLOX"],
+        "M747": ["NERDI", "ENIMA", "SOKRU", "VEVIN", "IDARU", "DIRAL", "CND"],
+        "N180": ["DENAK", "POGAV"],
         "N181": ["FLR", "POLUN", "ELBAV", "TIMUR"],
-        "L622": ["KOMAN", "OBUGA", "FLR", "ENIMA"],
+        "P727": ["VEVIN", "ARGES"],
+        "P740": ["FLR", "DENAK", "KODRU"],
+        "P981": ["LAMIT", "BIVBU", "TOSVI"],
+        "T74" : ["DENAK", "LAPKA", "URELA", "FOCSA"],
         "T746": ["VEVIN", "OSTAL", "ARGES"]
     },
     "runways": [
