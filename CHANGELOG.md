@@ -34,7 +34,7 @@
 - Updates KBOS to AIRAC 1802 [#842](https://github.com/openscope/openscope/issues/842)
 - Updates KSTL to AIRAC 1802 [#844](https://github.com/openscope/openscope/issues/844)
 - Updates KPDX to AIRAC 1802 [#851](https://github.com/openscope/openscope/issues/851)
-
+- Overhaul of London Luton Airport (England, United Kingdom)[#241](https://github.com/openscope/openscope/issues/241)
 
 
 
