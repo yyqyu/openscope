@@ -2,20 +2,23 @@
     "icao": "jai",
     "name": "Jet Airways",
     "callsign": {
-        "name": "JET AIRWAYS",
+        "name": "Jet Airways",
         "callsignFormats": [
             "###"
         ]
     },
     "fleets": {
         "default": [
-            ["A332", 4 ],
-            ["A333", 4 ],
-            ["AT72", 13],
-            ["B737", 2 ],
-            ["B738", 61],
-            ["B739", 4 ],
-            ["B77W", 9 ]
+            ["A332", 4],
+            ["A333", 4],
+            ["AT75", 13],
+            ["B737", 2],
+            ["B738", 68],
+            ["B739", 4],
+            ["B77W", 11]
+        ],
+        "b738": [
+            ["B738", 68]
         ]
     }
 }
