@@ -583,36 +583,36 @@ export default class AircraftCommander {
             return [false, 'unable to taxi, we\'re already airborne'];
         }
 
-        let taxiDestination = data[0];
+        const taxiDestination = data[0];
         const isDeparture = aircraft.category === FLIGHT_CATEGORY.DEPARTURE;
         const flightPhase = aircraft.flightPhase;
+        const taxiStartTime = TimeKeeper.accumulatedDeltaTime;
         const airport = AirportController.airport_get();
+        let runway = airport.getRunway(taxiDestination);
 
-        // Set the runway to taxi to
-        if (!taxiDestination) {
-            taxiDestination = airport.departureRunwayModel;
+        if (taxiDestination && !runway) {
+            const readback = {};
+            readback.log = `there is no runway ${taxiDestination.toUpperCase()}`;
+            readback.say = `there is no runway ${radio_runway(taxiDestination.name)}`;
+
+            return [false, readback];
         }
 
-        const runway = airport.getRunway(taxiDestination);
-
+        // Set the runway to taxi to when none is specified
         if (!runway) {
-            return [false, `no runway ${taxiDestination}`];
+            runway = aircraft.fms.departureRunwayModel;
         }
 
-        // If the aircraft is being re-assigned a runway, we need to remove it from the prior queue
-        if (flightPhase === FLIGHT_PHASE.TAXI) {
-            aircraft.fms.departureRunwayModel.removeAircraftFromQueue(aircraft);
-            aircraft.fms.departureRunwayModel = null;
+        // If previously told to taxi to a runway, we need to remove this aircraft from the prior queue
+        if (aircraft.flightPhase === FLIGHT_PHASE.TAXI || aircraft.flightPhase === FLIGHT_PHASE.WAITING) {
+            aircraft.fms.departureRunwayModel.removeAircraftFromQueue(aircraft.id);
         }
 
         const readback = aircraft.pilot.taxiToRunway(runway, isDeparture, flightPhase);
 
-        // TODO: this may need to live in a method on the aircraft somewhere
-        aircraft.fms.departureRunwayModel = runway;
-        aircraft.taxi_start = TimeKeeper.accumulatedDeltaTime;
-
         runway.addAircraftToQueue(aircraft.id);
         aircraft.setFlightPhase(FLIGHT_PHASE.TAXI);
+        aircraft.taxi_start = taxiStartTime;
 
         GameController.game_timeout(
             this._changeFromTaxiToWaiting,
@@ -654,10 +654,10 @@ export default class AircraftCommander {
         const readback = {};
 
         if (!isInQueue) {
-            return [false, 'unable to take off, we\'re completely lost'];
+            return [false, 'unable to take off, we\'re not at any runway'];
         }
 
-        if (!aircraft.isOnGround()) {
+        if (aircraft.isAirborne()) {
             return [false, 'unable to take off, we\'re already airborne'];
         }
 

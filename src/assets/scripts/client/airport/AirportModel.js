@@ -663,7 +663,7 @@ export default class AirportModel {
      * @return {RunwayModel|null}
      */
     getRunway(name) {
-        return this._runwayCollection.findRunwayModelByName(name).toUpperCase();
+        return this._runwayCollection.findRunwayModelByName(name);
     }
 
     /**
