@@ -364,7 +364,7 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             name: 'Seattle-Tacoma International Airport',
             premium: false,
             wip: false
-        // },
+        },
         // {
         //     icao: 'ksfo',
         //     level: 'medium',
@@ -413,7 +413,7 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             name: 'Bucharest Henri Coanda International Airport',
             premium: false,
             wip: false
-        },
+        }
         // {
         //     icao: 'ltba',
         //     level: 'hard',
@@ -630,6 +630,6 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         //     name: 'Shanghai Pudong International Airport',
         //     premium: false,
         //     wip: true
-        }
+        //}
     ];
 })();
