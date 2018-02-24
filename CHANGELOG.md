@@ -10,6 +10,7 @@
 
 ### Bugfixes
 - [#918](https://github.com/openscope/openscope/issues/918) - Fix failed load by verifying "last airport" in loadList before attempting to use it
+- [#899](https://github.com/openscope/openscope/issues/899) - Fix improper merging of routes when divergent waypoint is not in the middle of the leg
 
 
 
