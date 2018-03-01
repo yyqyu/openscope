@@ -10,6 +10,7 @@
 - Add Raleigh-Durham Int'l (KRDU) [#819](https://github.com/openscope/openscope/issues/819)
 - Add Pittsburgh International Airport (KPIT) [#785](https://github.com/openscope/openscope/issues/785)
 - Add Halifax Stanfield International Airport (CYHZ) [#106](https://github.com/openscope/openscope/issues/106)
+- Allows selection of only aircraft within controlled airspace [#818](https://github.com/openscope/openscope/issues/818)
 
 
 
