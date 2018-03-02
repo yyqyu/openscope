@@ -8,7 +8,7 @@
 - Add Leeds Bradford Airport (England, United Kingdom) [#265](https://github.com/openscope/openscope/issues/265)
 - Add Kansas City Int'l (KMCI) [#816](https://github.com/openscope/openscope/issues/816)
 - Add Raleigh-Durham Int'l (KRDU) [#819](https://github.com/openscope/openscope/issues/819)
-- Add Zürich Airport (LSZH) [#838](https://github.com/openscope/openscope/issues/838)
+- Add Pittsburgh International Airport (KPIT) [#785](https://github.com/openscope/openscope/issues/785)
 
 
 
@@ -29,6 +29,12 @@
 - Remove nonfunctional airports from load list broken by feature/809 [#881](http://github.com/openscope/openscope/issues/881)
 - Overhaul of Ronald Reagan Washington National Airport (DC, USA) [#216](https://github.com/openscope/openscope/issues/216)
 - Overhaul of Manchester International Airport (England, United Kingdom)[#854](https://github.com/openscope/openscope/issues/854)
+- Customisation of callsign formats [#866](https://github.com/openscope/openscope/issues/866)
+- Overhaul of Frankfurt Am Main International Airport (Germany) [#199](https://github.com/openscope/openscope/issues/199)
+- Updates KBOS to AIRAC 1802 [#842](https://github.com/openscope/openscope/issues/842)
+- Updates KSTL to AIRAC 1802 [#844](https://github.com/openscope/openscope/issues/844)
+- Updates KPDX to AIRAC 1802 [#851](https://github.com/openscope/openscope/issues/851)
+
 
 
 

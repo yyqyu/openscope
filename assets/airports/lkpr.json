@@ -131,10 +131,6 @@
         "_RWY12": ["N50d05m25.68", "E14d16m54.02"],
         "_RWY24": ["N50d06m06.61", "E14d13m34.68"],
         "_RWY30": ["N50d06m28.84", "E14d14m43.32"],
-        "GOLOP000": ["N50d50.0", "E14d29.0"],
-        "_GOSEK000": ["N49d25.0", "E14d06.0"],
-        "_LOMKI091": ["N49d55.0", "E12d55.0"],
-        "_VLM000": ["N49d38.4", "E15d10.8"],
         "PR402": ["N50d02m17.81", "E14d00m55.69"],
         "PR403": ["N49d51m23.47", "E14d09m33.64"],
         "PR404": ["N49d40m02.98", "E14d32m41.81"],
@@ -214,6 +210,7 @@
         "DEKOV": ["N50d53.83", "E14d12.98"],
         "DOBEN": ["N49d46.4", "E13d33.7"],
         "DONAD": ["N50d04.85", "E13d00.00"],
+        "DOLUP": ["N49d07.15", "E13d23.67"],
         "DOPOV": ["N50d04.85", "E13d07.51"],
         "ERASU": ["N50d16m07.51", "E14d28m41.31"],
         "ESINU": ["N50d13.7", "E13d41.2"],
@@ -271,7 +268,8 @@
         "P733": ["ARTUP", "TOMTI"],
         "Y621": ["VENOX", "DEKOV"],
         "Z21" : ["VOZ", "NELPA", "PISAM"],
-        "P861": ["ASTEL", "GOLOP"]
+        "P861": ["ASTEL", "GOLOP"],
+        "Z39" : ["DOLUP", "GOSEK"]
     },
     "sids":{
         "ARTUP2H": {
@@ -688,16 +686,96 @@
             "icao": "GOLOP2S",
             "name": "Golop Two Sierra",
             "entryPoints": {
-                "GOLOP": [["GOLOP", "S250-"]]
+                "GOLOP": [["GOLOP", "S250|A95+|A165-"]]
             },
-            "body": ["PR516", ["PR517", "S220-"], "PR518", "ERASU", "#061"],
+            "body": ["PR516", ["PR517", "S220|A20+|A35-"], "PR518", "ERASU", "#061"],
             "rwy": {
                 "LKPR24": []
             },
             "draw": [["GOLOP", "PR516", "PR517", "PR518", "ERASU"]]
+        },
+        "GOSEK3S": {
+            "icao": "GOSEK3S",
+            "name": "Gosek Three Sierra",
+            "entryPoints": {
+                "GOSEK": [["GOSEK", "S250-|A95+|A165-"]]
+            },
+            "body": [["PR521", "S220-|A20+|A35-"], ["RATEV", "S220-|A20+|A35-"], "#061"],
+            "rwy": {
+                "LKPR24": []
+            },
+            "draw": [["GOSEK", "PR521", "RATEV"]]
         }
     },
     "spawnPatterns": [
+        {
+            "origin": "",
+            "destination": "LKPR",
+            "category": "arrival",
+            "route": "ASTEL.P861.GOLOP.GOLOP2S.LKPR24",
+            "altitude": 14000,
+            "speed": 320,
+            "method" : "random",
+            "rate": 20,
+            "airlines": [
+                ["TVS", 20],
+                ["CSA", 20],
+                ["EZY", 10],
+                ["RYR",10],
+                ["AFR",4],
+                ["AUA",4],
+                ["AZA",4],
+                ["AFL",4],
+                ["BAW",4],
+                ["DLH",4],
+                ["SWR",4],
+                ["KLM",2],
+                ["KLC",2],
+                ["SAS",2],
+                ["LOT",2],
+                ["TAP",2],
+                ["EIN",2],
+                ["IBE",2],
+                ["SAS",1],
+                ["EIN",1],
+                ["CES",1],
+                ["UAE",1]
+            ]
+        },
+        {
+            "origin": "",
+            "destination": "LKPR",
+            "category": "arrival",
+            "route": "DOLUP.Z39.GOSEK.GOSEK3S.LKPR24",
+            "altitude": "14000",
+            "speed": "250",
+            "method" : "random",
+            "rate": 20,
+            "airlines": [
+                ["TVS", 20],
+                ["CSA", 20],
+                ["EZY", 10],
+                ["RYR",10],
+                ["AFR",4],
+                ["AUA",4],
+                ["AZA",4],
+                ["AFL",4],
+                ["BAW",4],
+                ["DLH",4],
+                ["SWR",4],
+                ["KLM",2],
+                ["KLC",2],
+                ["SAS",2],
+                ["LOT",2],
+                ["TAP",2],
+                ["EIN",2],
+                ["IBE",2],
+                ["SAS",1],
+                ["EIN",1],
+                ["CES",1],
+                ["UAE",1]
+            ]
+        },
         {
             "origin": "LKPR",
             "destination": "",
@@ -843,40 +921,6 @@
             "speed": "",
             "method" : "random",
             "rate": 2,
-            "airlines": [
-                ["TVS", 20],
-                ["CSA", 20],
-                ["EZY", 10],
-                ["RYR",10],
-                ["AFR",4],
-                ["AUA",4],
-                ["AZA",4],
-                ["AFL",4],
-                ["BAW",4],
-                ["DLH",4],
-                ["SWR",4],
-                ["KLM",2],
-                ["KLC",2],
-                ["SAS",2],
-                ["LOT",2],
-                ["TAP",2],
-                ["EIN",2],
-                ["IBE",2],
-                ["SAS",1],
-                ["EIN",1],
-                ["CES",1],
-                ["UAE",1]
-            ]
-        },
-        {
-            "origin": "",
-            "destination": "LKPR",
-            "category": "arrival",
-            "route": "ASTEL.P861.GOLOP.GOLOP2S.LKPR24",
-            "altitude": "14000",
-            "speed": "320",
-            "method" : "random",
-            "rate": 20,
             "airlines": [
                 ["TVS", 20],
                 ["CSA", 20],

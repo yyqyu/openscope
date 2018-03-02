@@ -4,11 +4,7 @@
     "callsign": {
         "name": "Swiss",
         "callsignFormats": [
-            "####",
-            "###@",
-            "##@@",
-            "##@",
-            "###"
+            "####"
         ]
     },
     "fleets": {

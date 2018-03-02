@@ -62,10 +62,10 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         // },
         {
             icao: 'eddf',
-            level: 'medium',
-            name: 'Frankfurt Airport',
+            level: 'hard',
+            name: 'Flughafen Frankfurt am Main',
             premium: false,
-            wip: true
+            wip: false
         },
         {
             icao: 'eddh',
@@ -299,6 +299,34 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
         // },
         {
             icao: 'kpdx',
+            level: 'easy',
+            name: 'Portland International Airport',
+            premium: false,
+            wip: false
+        },
+        // {
+        //     icao: 'kphx',
+        //     level: 'easy',
+        //     name: 'Phoenix Sky Harbor International Airport',
+        //     premium: false,
+        //     wip: true
+        // },
+        {
+            icao: 'kpit',
+            level: 'beginner',
+            name: 'Pittsburgh International Airport',
+            premium: false,
+            wip: false
+        },
+        // {
+        //     icao: 'kpvd',
+        //     level: 'beginner',
+        //     name: 'Theodore Francis Green Memorial State Airport',
+        //     premium: false,
+        //     wip: false
+        // },
+        {
+            icao: 'kpdx',
             level: 'beginner',
             name: 'Portland International Airport',
             premium: false,
@@ -367,13 +395,13 @@ window.AIRPORT_LOAD_LIST = (function() { // eslint-disable-line wrap-iife
             premium: false,
             wip: false
         },
-        // {
-        //     icao: 'lkpr',
-        //     level: 'easy',
-        //     name: 'Vaclav Havel International Airport',
-        //     premium: false,
-        //     wip: true
-        // },
+        {
+            icao: 'lkpr',
+            level: 'easy',
+            name: 'Vaclav Havel International Airport',
+            premium: false,
+            wip: true
+        },
         {
             icao: 'loww',
             level: 'medium',

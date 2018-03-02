@@ -4,9 +4,6 @@
     "callsign": {
         "name": "Air France",
         "callsignFormats": [
-            "####",
-            "##@@",
-            "###@",
             "###"
         ]
     },
