@@ -1,6 +1,8 @@
 ## 6.1.0 (April 1, 2018)
 ---
 ### New Features
+- [#818](https://github.com/openscope/openscope/issues/818) - Allows selection of only aircraft within controlled airspace
+- [#838](https://github.com/openscope/openscope/issues/838) - Add Zürich Airport (LSZH)
 
 
 
@@ -13,6 +15,7 @@
 
 
 ### Enhancements & Refactors
+- [#910](https://github.com/openscope/openscope/issues/910) - Reactivate KBOS and KSTL
 
 
 
