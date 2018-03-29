@@ -13,7 +13,7 @@
 
 
 ### Enhancements & Refactors
-- [#908](https://github.com/openscope/openscope/issues/908) - Updates KSEA to AIRAC 1803
+- [#908](https://github.com/openscope/openscope/issues/908) - Updates KSEA to AIRAC 1804
 
 
 
