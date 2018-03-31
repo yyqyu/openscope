@@ -17,6 +17,8 @@
 
 ### Enhancements & Refactors
 - [#910](https://github.com/openscope/openscope/issues/910) - Reactivate KBOS and KSTL
+- [#928](https://github.com/openscope/openscope/issues/928) - Updates KPDX to AIRAC 1804
+
 
 
 
