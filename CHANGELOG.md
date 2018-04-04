@@ -17,7 +17,7 @@
 
 ### Enhancements & Refactors
 - [#910](https://github.com/openscope/openscope/issues/910) - Reactivate KBOS and KSTL
-
+- [#782](https://github.com/openscope/openscope/issues/782) - Overhaul of KATL
 
 
 
