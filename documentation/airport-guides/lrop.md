@@ -14,7 +14,7 @@ Bucharest Terminal Movement Area is a class A airspace, equivalent to American c
 Airspace above Bucharest is restricted (LRR3) up to FL105, entering it requires special permission from the local authorities. Clinceni danger area (LRD100) is temprary activated during the summer with parachute jumping activity up to FL130. 
 
 ### Instrument Procedures
-SIDs and STARs are implemented for every exit/entry point in the TMA. Only RNAV departures and arrivals are premitted, non-PRNAV aircrafts are vectored.
+SIDs and STARs are implemented for every exit/entry point in the TMA. Only RNAV departures and arrivals are premitted, non-PRNAV aircraft are vectored.
 
 ### Sectors Available in OpenScope
 
